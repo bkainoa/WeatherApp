@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<GridPane alignment="center" hgap="10" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="bwalker14.Controller">
+<GridPane alignment="center" hgap="10" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bwalker14.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -21,11 +20,11 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" text="City, State" textAlignment="CENTER" GridPane.columnIndex="1" />
-      <Label text="Temperature" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label text="Weather" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="city_state" alignment="CENTER" contentDisplay="CENTER" text="City, State" textAlignment="CENTER" GridPane.columnIndex="1" />
+      <Label fx:id="temperature" text="Temperature" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="weather" text="Weather" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Label text="Zip:" GridPane.rowIndex="3" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Button mnemonicParsing="false" text="Go!" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="user_input" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#buttonPress" text="Go!" GridPane.columnIndex="2" GridPane.rowIndex="3" />
    </children>
 </GridPane>
